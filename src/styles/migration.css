@@ -1,0 +1,45 @@
+/* Lifecycle and accessibility adaptations for this isolated Next.js reference. */
+html:not(.unifi-enhanced) .loading-container {
+  display: none;
+}
+html:not(.unifi-enhanced) #smooth-wrapper {
+  position: relative;
+  height: auto;
+}
+html:not(.unifi-enhanced) .animate-cover {
+  display: none;
+}
+html:not(.unifi-enhanced) .home-lottie-gridroom .container {
+  position: relative;
+}
+html:not(.unifi-enhanced) .home-lottie-gridroom .lottie-gridroom {
+  display: none;
+}
+html:not(.unifi-enhanced) .single-line-inner {
+  transform: none;
+}
+html.unifi-reduced *,
+html.unifi-reduced *::before,
+html.unifi-reduced *::after {
+  animation: none !important;
+  transition-duration: 0s !important;
+}
+html.unifi-reduced {
+  scroll-behavior: auto;
+}
+a:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 5px;
+}
+.reference-error {
+  position: fixed;
+  z-index: 1000;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  padding: 12px 20px;
+  color: white;
+  background: #272727;
+  font: 14px sans-serif;
+}
